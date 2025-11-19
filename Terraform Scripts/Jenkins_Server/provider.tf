@@ -10,11 +10,11 @@ terraform {
   backend "s3" {
     bucket         = "project-register"
     key            = "jenkins/terraform.tfstate"
-    region         = "us-east-2"
+    region         = "us-east-1"
 
   }
 }
 
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
